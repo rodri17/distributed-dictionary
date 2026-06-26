@@ -68,9 +68,9 @@ Para ver um guia com os comandos utilizados vá a [(`manual.txt`)](./manual.txt)
 
 ## ✨ Visão Geral
 
-Atividade2 é uma ferramenta poderosa para programadores, concebida para simplificar a implementação e gestão de aplicações baseadas em microserviços, garantindo alta disponibilidade e escalabilidade.
+O Dicionário distribuído é uma ferramenta poderosa para programadores, concebida para simplificar a implementação e gestão de aplicações baseadas em microserviços, garantindo alta disponibilidade e escalabilidade.
 
-**Porquê usar o Atividade2?**
+**Porquê usar o Dicionário Distribuído?**
 
 Este projeto simplifica a orquestração de ecossistemas de aplicações complexas. As funcionalidades principais incluem:
 
@@ -211,18 +211,18 @@ Este projeto requer a seguinte dependência:
 
 ### ⚙️ Instalação
 
-Construa a Atividade2 a partir do código-fonte e instale as dependências:
+Construa o Dicionário Distribuído a partir do código-fonte e instale as dependências:
 
 1. **Clone o repositório:**
 
 ```sh
- git clone https://github.com/a75739/Atividade2
+ git clone https://github.com/a75739/distributed-dictionary
 ```
 
 2. **Aceda à pasta do projeto:**
 
 ```sh
- cd Atividade2
+ cd distributed-dictionary
 ```
 
 3. **Execute o Docker Engine:**
@@ -245,7 +245,7 @@ Execute o projeto com:
 
 ##### Com Git Bash:
 
-Clique na pasta do projeto `Atividade2` com o lado direito do rato e selecione "Mostrar mais opções" > "Open Git Bash here"
+Clique na pasta do projeto `distributed-dictionary` com o lado direito do rato e selecione "Mostrar mais opções" > "Open Git Bash here"
 
 Execute o projeto com:
 
@@ -285,7 +285,7 @@ Veja abaixo uma demonstração rápida da instalação do projeto:
 
 #### 1. Construa a imagem Docker
 ```sh
-docker build -t atividade2:latest .
+docker build -t distributed-dictionary:latest .
 ```
 
 #### 2. Autenticação no Registo de Containers
@@ -305,8 +305,8 @@ aws ecr get-login-password --region sua-regiao | docker login --username AWS --p
 #### 3. Tag e Envio da Imagem
 
 ```sh
-docker tag atividade2:latest seu-registo/atividade2:latest
-docker push seu-registo/atividade2:latest
+docker tag distributed-dictionary:latest seu-registo/distributed-dictionary:latest
+docker push seu-registo/distributed-dictionary:latest
 ```
 
 ### 🚀 Implementação
@@ -322,13 +322,13 @@ AWS ECS:
 Google Cloud Run:
 
 ```sh
-gcloud run deploy atividade2-api --image seu-registo/atividade2:latest --port 8000 --allow-unauthenticated
+gcloud run deploy distributed-dictionary-api --image seu-registo/distributed-dictionary:latest --port 8000 --allow-unauthenticated
 ```
 
 Azure Container Instances:
 
 ```sh
-az container create --resource-group seu-resource-group --name atividade2-api --image seu-registo/atividade2:latest --ports 8000
+az container create --resource-group seu-resource-group --name distributed-dictionary-api --image seu-registo/distributed-dictionary:latest --ports 8000
 ```
 ### 🔧 Configuração Adicional
 
@@ -351,7 +351,7 @@ https://atividade2-xyz.a.run.app
 ## 📁 Estrutura do Projeto
 
 ```sh
-└── Atividade2/
+└── distributed-dictionary/
     ├── README.md
     ├── backend/
     │   ├── Dockerfile
@@ -392,7 +392,7 @@ https://atividade2-xyz.a.run.app
 ### 📑 índice do Projeto
 
 <details open>
-    <summary><b><code>ATIVIDADE2/</code></b></summary>
+    <summary><b><code>Distributed dictionary/</code></b></summary>
     <!-- __root__ Submodule -->
     <details>
         <summary><b>__root__</b></summary>
@@ -989,7 +989,7 @@ Ao ver o campo "Checks" dos relatórios poderá ver que não houve nenhuma falha
 ## 🤝 Contribuir
 
 - Partilha as tuas ideias, dá feedback ou coloca questões.
-- Envia bugs encontrados ou sugestões de funcionalidades para o projeto `Atividade2`.
+- Envia bugs encontrados ou sugestões de funcionalidades para o projeto `distributed-dictionary`.
 - Analisa PRs abertas e submete as tuas próprias contribuições.
 
 <details closed>
@@ -998,7 +998,7 @@ Ao ver o campo "Checks" dos relatórios poderá ver que não houve nenhuma falha
 1. **Faça fork do Repositório**: Começe por fazer fork do repositório para a sua conta no GitHub.
 2. **Clone Localmente**: Clone o repositório forkado para a sua máquina local usando um cliente git.
    ```sh
-   git clone https://github.com/a75739/Atividade2
+   git clone https://github.com/a75739/distributed-dictionary
    ```
 3. **Crie uma nova branch**: Trabalhe sempre numa branch nova, com um nome descritivo.
    ```sh
@@ -1021,8 +1021,8 @@ Ao ver o campo "Checks" dos relatórios poderá ver que não houve nenhuma falha
 <summary>Gráfico de Contribuição</summary>
 <br>
 <p align="left">
-   <a href="https://github.com{/a75739/Atividade2/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=a75739/Atividade2">
+   <a href="https://github.com{/a75739/distributed-dictionary/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=a75739/distributed-dictionary">
    </a>
 </p>
 </details>
